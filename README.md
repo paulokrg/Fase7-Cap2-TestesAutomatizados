@@ -56,9 +56,11 @@ SmartCities.sln
 ```bash
 cd SmartCities.Api
 dotnet restore
-dotnet run
+dotnet run --launch-profile https
 ```
+
 A API ficará disponível em `https://localhost:5000` (e `http://localhost:5215`).
+A documentação da API ficará disponível em `https://localhost:5000/swagger/index.html`
 
 | Verbo | Rota              | Descrição                          |
 | ----- | ----------------- | ---------------------------------- |
