@@ -28,13 +28,16 @@ jobs:
       - name: Restore tests
         run: dotnet restore SmartCities-Tests/tests/SmartCities.Tests
 
+      - name: Build tests
+        run: dotnet build SmartCities-Tests/tests/SmartCities.Tests
+
       - name: Execute tests
-        run: dotnet test SmartCities-Tests/tests/SmartCities.Tests --logger trx
+        run: dotnet test SmartCities-Tests/tests/SmartCities.Tests --no-build --logger trx
 
       - name: Publish LivingDoc
         run: |
           dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
-          livingdoc test-assembly             --project tests/SmartCities.Tests             --output Report.html
+          livingdoc test-assembly --project SmartCities-Tests/tests/SmartCities.Tests --output Report.html
 
       - name: Upload Report
         uses: actions/upload-artifact@v4
