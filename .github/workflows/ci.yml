@@ -10,10 +10,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: "8.x"
 
@@ -37,7 +37,7 @@ jobs:
           livingdoc test-assembly             --project tests/SmartCities.Tests             --output Report.html
 
       - name: Upload Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TestsReport
           path: Report.html
