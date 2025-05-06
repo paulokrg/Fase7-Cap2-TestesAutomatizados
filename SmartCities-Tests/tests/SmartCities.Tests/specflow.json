@@ -1,0 +1,12 @@
+{
+    "bindingCulture": { "name": "pt-BR" },
+    "language": {
+        "feature": "pt-BR",
+        "tool": "en-US"
+    },
+    "generator": {
+        "allowDebugGeneratedFiles": false,
+        "markFeaturesParallelizable": true
+    },
+    "runtime": { "stopAtFirstError": false }
+}
