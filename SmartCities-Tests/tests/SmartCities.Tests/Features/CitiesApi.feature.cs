@@ -91,7 +91,7 @@ namespace SmartCities.Tests.Features
             {
                 this.ScenarioStart();
 #line 5
-    testRunner.Given("que a API está disponível em \"https://localhost:5000\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+    testRunner.Given("que a API está disponível em \"http://localhost:5215\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 6
     testRunner.When("faço GET em \"/cities\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -127,7 +127,7 @@ namespace SmartCities.Tests.Features
             {
                 this.ScenarioStart();
 #line 12
-    testRunner.Given("que a API está disponível em \"https://localhost:5000\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+    testRunner.Given("que a API está disponível em \"http://localhost:5215\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 13
     testRunner.When("faço GET em \"/cities/9999\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");

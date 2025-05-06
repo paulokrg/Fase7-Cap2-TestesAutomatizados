@@ -20,10 +20,23 @@ jobs:
       - name: Restore API
         run: dotnet restore SmartCities.Api
 
+      - name: Build API
+        run: dotnet build SmartCities.Api
+      
       - name: Run API (background)
         run: |
           cd SmartCities.Api
-          dotnet run &
+          dotnet run --launch-profile http &
+          cd ..
+          echo "Aguardando API iniciar..."
+          for i in {1..20}; do
+            if curl -sSf http://localhost:5215/health > /dev/null; then
+              echo "API está pronta!"
+              break
+            fi
+            echo "Aguardando..."
+            sleep 1
+          done
 
       - name: Restore tests
         run: dotnet restore SmartCities-Tests/tests/SmartCities.Tests

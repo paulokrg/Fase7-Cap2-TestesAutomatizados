@@ -91,7 +91,7 @@ namespace SmartCities.Tests.Features
             {
                 this.ScenarioStart();
 #line 6
-    testRunner.Given("que o serviço está rodando em \"https://localhost:5000\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+    testRunner.Given("que o serviço está rodando em \"http://localhost:5215\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 7
     testRunner.When("faço uma requisição GET no endpoint \"/health\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
