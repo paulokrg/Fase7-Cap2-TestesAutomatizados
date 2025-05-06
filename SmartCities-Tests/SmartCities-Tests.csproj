@@ -26,6 +26,19 @@
 </ItemGroup>
 	
 	<ItemGroup>
+	  <Compile Remove="tests\SmartCities.Tests\bin\**" />
+	  <Compile Remove="tests\SmartCities.Tests\obj\**" />
+	  <EmbeddedResource Remove="tests\SmartCities.Tests\bin\**" />
+	  <EmbeddedResource Remove="tests\SmartCities.Tests\obj\**" />
+	  <None Remove="tests\SmartCities.Tests\bin\**" />
+	  <None Remove="tests\SmartCities.Tests\obj\**" />
+	  <SpecFlowFeatureFiles Remove="tests\SmartCities.Tests\bin\**" />
+	  <SpecFlowFeatureFiles Remove="tests\SmartCities.Tests\obj\**" />
+	  <SpecFlowObsoleteCodeBehindFiles Remove="tests\SmartCities.Tests\bin\**" />
+	  <SpecFlowObsoleteCodeBehindFiles Remove="tests\SmartCities.Tests\obj\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
 	  <Compile Remove="tests\SmartCities.Tests\Steps\Class1.cs" />
 	</ItemGroup>
 
