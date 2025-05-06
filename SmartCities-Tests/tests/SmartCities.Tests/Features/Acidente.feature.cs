@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SmartCities_Tests.Tests.SmartCities_Tests.Features
+namespace SmartCities.Tests.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -35,7 +35,7 @@ namespace SmartCities_Tests.Tests.SmartCities_Tests.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "tests/SmartCities.Tests/Features", "Gestão de Acidentes", "  Para monitorar incidentes de trânsito\r\n  Como usuário da API\r\n  Quero ver a lis" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "Features", "Gestão de Acidentes", "  Para monitorar incidentes de trânsito\r\n  Como usuário da API\r\n  Quero ver a lis" +
                     "ta de acidentes e detalhes de um acidente", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
