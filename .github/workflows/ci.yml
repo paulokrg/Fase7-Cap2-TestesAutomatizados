@@ -26,10 +26,10 @@ jobs:
           dotnet run &
 
       - name: Restore tests
-        run: dotnet restore tests/SmartCities.Tests
+        run: dotnet restore SmartCities-Tests/tests/SmartCities.Tests
 
       - name: Execute tests
-        run: dotnet test tests/SmartCities.Tests --no-build --logger trx
+        run: dotnet test SmartCities-Tests/tests/SmartCities.Tests --no-build --logger trx
 
       - name: Publish LivingDoc
         run: |
