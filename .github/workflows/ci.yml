@@ -50,7 +50,8 @@ jobs:
       - name: Publish LivingDoc
         run: |
           dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
-          livingdoc test-assembly --project SmartCities-Tests/tests/SmartCities.Tests --output Report.html
+          livingdoc test-assembly SmartCities-Tests/tests/SmartCities.Tests/bin/Debug/net8.0/SmartCities.Tests.dll --output Report.html
+
 
       - name: Upload Report
         uses: actions/upload-artifact@v4
