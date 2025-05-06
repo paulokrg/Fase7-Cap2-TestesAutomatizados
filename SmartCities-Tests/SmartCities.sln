@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCities-Tests", "SmartCities-Tests.csproj", "{B04A60F7-78A6-40DD-849B-4E516BED14C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{793D4CB7-E240-41AA-99C2-D3727B5F3526} = {793D4CB7-E240-41AA-99C2-D3727B5F3526}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCities.Api", "..\SmartCities.Api\SmartCities.Api.csproj", "{793D4CB7-E240-41AA-99C2-D3727B5F3526}"
 EndProject
